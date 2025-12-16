@@ -45,7 +45,7 @@ def validate_data():
     df_valid.to_csv(VALID_OUTPUT, index=False)
     print(f"Valid data saved to: {VALID_OUTPUT}")
     
-    # Simpan Invalid Data (Kalau ada)
+    # Simpan Invalid Data klo ada
     if not df_invalid.empty:
         df_invalid.to_csv(INVALID_OUTPUT, index=False)
         print(f"\nInvalid data saved to: {INVALID_OUTPUT} (Check this file!)")
