@@ -27,7 +27,7 @@ def process_etl():
     # A. Filter
     df = df[df['rank'] <= 50].copy() # top 50 
     
-    # B. Kurs Rupiah: Anggap 1 USD = Rp 16.000 (Data asli kan USD)
+    # B. Kurs Rupiah: Anggap 1 USD = Rp 16.000 (Data asli kan USD) 
     kurs_idr = 16000
     df['price_idr'] = df['price_usd'] * kurs_idr
     df['market_cap_idr'] = df['market_cap_usd'] * kurs_idr
