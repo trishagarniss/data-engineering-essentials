@@ -1,4 +1,5 @@
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:00C9FF&height=250&section=header&text=Data%20Engineering%20Essentials&fontSize=40&animation=fadeIn&fontAlignY=38&desc=ETL%20•%20Data%20Quality%20•%20Warehousing&descAlignY=55&descSize=20&fontColor=ffffff)
+
 *A practical portfolio demonstrating core Data Engineering concepts: Real-time API Ingestion, ETL Processes, Storage Optimization (Parquet), Data Quality Gates, and Incremental Loading strategies.*
 
 ---
@@ -114,10 +115,10 @@ python 05_incremental_load/update_master.py
 ## ✨ Key Takeaways
 
 Repo ini mendemonstrasikan pemahaman saya bahwa Data Engineering bukan hanya tentang menulis kode Python, tetapi tentang:
-* ✅ Memastikan **kualitas dan integritas** data.
-* ✅ Memikirkan **efisiensi penyimpanan** dan biaya.
-* ✅ Membangun sistem yang **tahan banting** terhadap perubahan data eksternal.
-* ✅ Memahami **kebutuhan bisnis** dalam transformasi data.
+* Memastikan **kualitas dan integritas** data.
+* Memikirkan **efisiensi penyimpanan** dan biaya.
+* Membangun sistem yang **tahan banting** terhadap perubahan data eksternal.
+* Memahami **kebutuhan bisnis** dalam transformasi data.
 
 ---
 <div align="center">
