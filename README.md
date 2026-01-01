@@ -81,5 +81,42 @@ cd data-engineering-essentials
 git checkout feature/airflow-integration
 ```
 
---- 
+### 2. Nyalakan Mesin (Spin Up Infrastructure)
+Jalankan perintah ini untuk membangun image dan menyalakan container:
+```
+docker compose up -d --build
+```
+*Tunggu beberapa menit hingga proses download & build selesai.*
 
+### 3. Akses Dashboard Airflow
+Buka browser dan kunjungi:
+👉 **http://localhost:8080**
+
+* **Username:** `admin`
+* **Password:** `admin`
+
+### 4. Jalankan Pipeline
+1. Cari DAG bernama **`crypto_automation_pipeline`**.
+2. Klik tombol **Toggle** di sebelah kiri (Unpause).
+3. Klik tombol **Play (▶️)** di sebelah kanan -> **Trigger DAG**.
+4. Lihat prosesnya di tab **Graph View**.
+
+---
+
+## ✨ Key Enhancements in This Version
+
+Kenapa versi ini lebih baik dari versi Basic?
+
+* **Isolation:** Semua berjalan di dalam Container. "It works on my machine" tidak lagi menjadi masalah.
+* **Automation:** Tidak perlu menjalankan script satu per satu (`python script.py`). Airflow mengerjakannya otomatis setiap hari (`@daily`).
+* **Dependency Management:** Jika step Ingestion gagal, step ETL tidak akan dijalankan (mencegah error beruntun).
+* **Monitoring:** Kita bisa melihat log error dan status sukses langsung dari Dashboard GUI yang intuitif.
+
+---
+
+## 🛑 Stop & Clean Up
+
+Untuk mematikan container dan menghemat RAM laptop setelah selesai bereksperimen:
+
+```bash
+docker compose down
